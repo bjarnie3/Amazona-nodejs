@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Amazona</title>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">&#9776;</button>
+                    <a href="index.html">amazona</a>
+                </div>
+                <div class="header-links">
+                    <a href="cart.html">Cart</a>
+                    <a href="signin.html">sign In</a>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <h3>Shoppin Categories</h3>
+                <button class="sidebar-close-button" onclick="closeMenu()">X</button>
+                <ul>
+                    <li>
+                        <a href="index.html">Klóset og Eldhúsvörur</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Rest</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="main">
+                <div class="content">
+                    <ul class="products">
+                        <li>
+                            <div class="product">
+                                <img src="images/BlandadurLakris.png" alt="Blandaður Lakrís">
+                                <div class="product-name"><a href="product.html"> Blandaður Lakrís</a></div>
+                                <div class="product-brand">Papco</div>
+                                <div class="product-rating">Um vöruna</div>
+                                <div class="product-price">1000</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/Goa.jpg" alt="Góa Lakrís">
+                                <div class="product-name"><a href="product.html"> Góa Lakrís</a></div>
+                                <div class="product-brand">Papco</div>
+                                <div class="product-rating">Um vöruna</div>
+                                <div class="product-price">1000</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+            <footer class="footer">All rightt reserved</footer>
+        </div>
+        <script>
+        function openMenu() {
+            document.querySelector(".sidebar").classList.add("open");  
+        }
+        function closeMenu() {
+            document.querySelector(".sidebar").classList.remove("open");   
+        }
+        </script>
+        
+    </body>
+</html>
+
+<!-- 53:05-->
